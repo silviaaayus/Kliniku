@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Klinik" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryVariant">#4CAF50</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#4CAF50</item>
+        <item name="colorSecondaryVariant">#AAAAAA</item>
+        <item name="colorOnSecondary">#4CAF50</item>
+        <!-- Status bar color. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/ui_day</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

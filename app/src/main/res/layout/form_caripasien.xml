@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:id="@+id/cariPasien">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cari Pasien"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="?colorPrimary"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/cari_nik"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_login"
+                    android:hint="NIK"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_background_disabled"/>
+
+                <Button
+                    android:id="@+id/btn_caripasien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edmain"
+                    android:textColor="@color/white"
+                    android:text="Cari"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailCariPasien"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Pasien"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:textColor="?colorPrimary"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nama "
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Silvia Ayu"
+                            android:textColor="?colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:id="@+id/nama"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NIK "
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="26-03-2021"
+                            android:textColor="?colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:id="@+id/nikCari"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Kelamin "
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="26-03-2021"
+                            android:textColor="?colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:id="@+id/jekel_cari"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat "
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="26-03-2021"
+                            android:textColor="?colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:id="@+id/alamat_cari"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No HP "
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="26-03-2021"
+                            android:textColor="?colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:id="@+id/nohp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email "
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="26-03-2021"
+                            android:textColor="?colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1"
+                            android:id="@+id/email_Cari"/>
+                </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

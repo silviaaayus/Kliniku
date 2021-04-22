@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KotakSaran.KotakSaranActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_second" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keluhan atau Saran"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_marginTop="@dimen/_3sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/txtKeluhan"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_login"
+            android:inputType="text"
+            android:hint="Masukkan keluhan anda!"
+            android:gravity="top"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Dokter"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_login">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_5sdp"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/btn_Kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/edmain"
+            android:textColor="@color/white"
+            android:text="Kirim" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
